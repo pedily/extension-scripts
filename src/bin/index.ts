@@ -1,2 +1,8 @@
 #!/usr/bin/env node
-console.log("in the bin!");
+import { getProgram } from "../getProgram";
+
+(() => {
+	const program = getProgram();
+
+	program.parse();
+})();
