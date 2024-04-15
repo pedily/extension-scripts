@@ -1,8 +1,9 @@
 {
 	"name": "@pedily/extension-scripts",
 	"version": "0.0.2",
-	"description": "",
+	"description": "Utility that helps creating Extensions for the Cognigy.AI platform",
 	"main": "dist/index.js",
+	"keywords": ["cognigy", "cognigy.ai"],
 	"scripts": {
 		"transpile": "tsc -p .",
 		"lint": "eslint src",
@@ -12,7 +13,8 @@
 	},
 	"bin": "dist/bin/index.js",
 	"author": "Robin Kranich",
-	"license": "ISC",
+	"private": false,
+	"license": "MIT",
 	"devDependencies": {
 		"@types/archiver": "^6.0.2",
 		"@types/node": "^20.12.7",
