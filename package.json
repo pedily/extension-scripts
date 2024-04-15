@@ -3,7 +3,10 @@
 	"version": "0.0.2",
 	"description": "Utility that helps creating Extensions for the Cognigy.AI platform",
 	"main": "dist/index.js",
-	"keywords": ["cognigy", "cognigy.ai"],
+	"keywords": [
+		"cognigy",
+		"cognigy.ai"
+	],
 	"scripts": {
 		"transpile": "tsc -p .",
 		"lint": "eslint src",
