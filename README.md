@@ -25,10 +25,10 @@ You can automate the generation of the "extension file" `.tar.gz` file by callin
 This will create a file called `{{PACKAGE_NAME}}.tar.gz` in your project folder, where `{{PACKAGE_NAME}}` is equal to the `name` field in your `package.json`.
 Contents of the extension file (todo-list for implementation):
 
-- [ ] your extension source code
+- [x] your extension source code
   - [ ] auto-detects TypeScript outputs by checking `outDir` in `tsconfig.json`
-  - [ ] falls back to the `main` file's directory in `package.json`
-- [ ] your `package.json`
+  - [x] falls back to the `main` file's directory in `package.json`
+- [x] your `package.json`
   - [ ] it will nag about missing properties and add sane defaults if some are missing
 - [x] an `icon.png`
   - [x] will add your `icon.png` from the project folder

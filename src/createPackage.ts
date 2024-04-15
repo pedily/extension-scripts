@@ -5,6 +5,8 @@ import { addIcon } from "./addIcon";
 import { addReadme } from "./addReadme";
 import { getExtensionFileName } from "./getExtensionFileName";
 import { getPackageJSON } from "./getPackageJSON";
+import { addSource } from "./addSource";
+import { addPackageJSON } from "./addPackageJSON";
 
 export const createPackage = async (directory: string) => {
 	const packageJSON = await getPackageJSON(directory);
@@ -16,8 +18,10 @@ export const createPackage = async (directory: string) => {
 		},
 	});
 
+	await addPackageJSON(archive);
 	await addReadme(archive, directory);
 	await addIcon(archive, directory);
+	await addSource(archive, directory);
 
 	const ws = createWriteStream(join(directory, packageName));
 
